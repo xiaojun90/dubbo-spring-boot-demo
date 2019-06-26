@@ -1,0 +1,14 @@
+server:
+  port: 8082
+dubbo:
+  protocol:
+    port: 20882 # 端口
+    name: dubbo # 协议名称
+    id: dubbo #编号
+  registry:
+    address: zookeeper://192.168.71.128:2181 # 注册中心
+  config-center:
+    address: zookeeper://192.168.71.128:2181 # 配置中心
+  application:
+    name: dubbo-spring-boot-consumer #应用名称
+    qos-enable: false  # 不启动运维
